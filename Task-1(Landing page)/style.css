@@ -158,6 +158,7 @@ html {
 }
 
 /* Top brands section */
+
 .section-title {
   text-align: center;
   margin: 30px 0px;
@@ -255,6 +256,7 @@ html {
 }
 
 /* Review */
+
 .reviews-tab {
   margin: 70px 0px;
   display: flex;
@@ -380,6 +382,7 @@ html {
 }
 
 /* Copyright */
+
 .copyright {
   width: 100%;
   padding: 30px 0px;
@@ -389,6 +392,7 @@ html {
 }
 
 /* Media querys */
+
 @media (max-width: 1100px) {
   .menu-bar {
     display: block;
