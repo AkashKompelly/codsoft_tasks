@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+    </style>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calc">
+        <input type="text" class="display" />
+        <table class="table">
+          <tr>
+            <td>
+              <button class="btn btnSpl" onclick="add('%')">%</button>
+            </td>
+            <td><button class="btn btnSpl" onclick="c()">CE</button></td>
+            <td><button class="btn btnSpl" onclick="cut()">DE</button></td>
+            <td><button class="btn btnSpl" onclick="add('/')">/</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn" value="7" onclick="add(7)">7</button></td>
+            <td><button class="btn" value="8" onclick="add(8)">8</button></td>
+            <td><button class="btn" value="9" onclick="add(9)">9</button></td>
+            <td><button class="btn btnSpl" onclick="add('*')">*</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn" onclick="add(4)">4</button></td>
+            <td><button class="btn" onclick="add(5)">5</button></td>
+            <td><button class="btn" onclick="add(6)">6</button></td>
+            <td><button class="btn btnSpl" onclick="add('-')">-</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn" onclick="add(1)">1</button></td>
+            <td><button class="btn" onclick="add(2)">2</button></td>
+            <td><button class="btn" onclick="add(3)">3</button></td>
+            <td><button class="btn btnSpl" onclick="add('+')">+</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn" onclick="add(0)">0</button></td>
+            <td><button class="btn" onclick="add('.')">.</button></td>
+            <td colspan="2">
+              <button class="btn btnEql" onclick="claculate()">=</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
